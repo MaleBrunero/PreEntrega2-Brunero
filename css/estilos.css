@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+
+@media only screen and (max-width: 599px) {
+
+    #header-container {
+        display: flex;
+        max-width: fit-content;
+    }
+
+    #search-bar {
+        width: 1rem;
+        height: 1rem;
+        margin: 0;
+    }
+
+    #logo {
+        max-width: 0.5rem;
+    }
+
+    #tiendas {
+        display: none
+    }
+
+    #main-banner {
+        display: none;
+    }
+
+    .carrousel-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carrousel-container .card:nth-child(3),
+    .carrousel-container .card:nth-child(5) {
+        display: none;
+    }
+
+    .card {
+        margin-top: 3rem;
+    }
+
+    #destacados-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner1 {
+        width: 100%;
+        margin: 0;
+        padding: 0
+    }
+
+    .banner-main {
+        margin: 0;
+        padding: 0;
+    }
+
+    #destacados-container-2 {
+        display: flex;
+        flex-direction: column-reverse
+    }
+
+    #banner-2 {
+        width: 100%;
+        margin: 0;
+        padding: 0
+    }
+
+    .banner-main {
+        margin: 0;
+        padding: 0;
+    }
+
+    #payment-methods-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #payment-methods-container .payment-methods-item:nth-child(3),
+    #payment-methods-container .payment-methods-item:nth-child(5) {
+        display: none;
+    }
+
+    #footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #arrepentimiento_form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#header-container {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 12rem;
+
+}
+
+#search-bar {
+    width: 50rem;
+    height: 3rem;
+    margin: 0;
+    padding-left: 1rem;
+    border-color: #86134D;
+    border-radius: 0.5rem;
+}
+
+.search-button {
+    color: #86134D;
+    background-color: white;
+    border-color: #86134D;
+    border-radius: 0.5em;
+    width: 7rem;
+    height: 2.5rem;
+    justify-self: center;
+}
+
+.icon_header {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+.list_nav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 2rem;
+    width: 100%;
+
+}
+
+.nav-item:hover {
+    color: black
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    background-color: #F2E6D0;
+}
+
+#h1_logo {
+    margin: 0;
+    color: #86134D;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+nav {
+    background-color: #FCEAEA;
+
+}
+
+.menu_nav {
+    display: flex;
+    align-items: center;
+    color: #86134D;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 1em;
+    height: 100%
+}
+
+.menu_nav:hover {
+    color: #DF80AD;
+    font-size: larger;
+}
+
+#sale {
+    color: #DF80AD;
+}
+
+main {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    color: #86134D
+}
+
+video {
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;
+
+}
+
+
+
+h2 {
+    margin: 2em;
+    color: #86134D;
+    font-size: 2rem;
+}
+
+.carrousel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+
+#destacados-button {
+    display: none;
+}
+
+#filter_list_main {
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+.filter_list_items {
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+#stores_map {
+    margin: 3rem
+}
+
+
+#store_list {
+    list-style-type: none;
+    font-size: 1rem;
+    margin: 2rem
+}
+
+
+
+#destacados-container {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#banner1 {
+    width: 60%;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#banner1 .banner-main {
+    width: 100%;
+    grid-area: 1 / 1 / 13 / 13;
+}
+
+#banner1 .ver_mas_banner_button {
+    grid-area: 10 / 6 / 12 / 8;
+
+
+}
+
+#destacados-container-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+
+#banner-2 {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#banner-2 .banner-main {
+    width: 100%;
+    grid-area: 1 / 1 / 13 / 13;
+
+}
+
+#banner-2 .ver_mas_banner_button {
+    grid-area: 10 / 6 / 12 / 8;
+
+}
+
+#card-item-banner-2 {
+    margin-right: 0.1rem
+}
+
+
+
+
+#card-item-banner1 {
+    margin: 1rem;
+}
+
+
+section button {
+    color: #86134D;
+    background-color: white;
+    border-color: #86134D;
+    border-radius: 0.5em;
+    width: 7rem;
+    height: 2.5rem;
+
+}
+
+.card {
+    border-color: #F2E6D0;
+    padding: 2rem;
+}
+
+.btn {
+    color: #86134D;
+    background-color: white;
+    border-color: #86134D;
+    border-radius: 0.5em;
+    width: 7rem;
+    height: 2.5rem;
+
+}
+
+.product-image {
+    width: 15rem;
+}
+
+.banner-main {
+    width: 60%;
+}
+
+#main-banner {
+    position: relative;
+}
+
+
+.ver_mas_banner_button {
+    color: white;
+    background-color: #86134D;
+    border-radius: 0.25rem;
+    width: 7rem;
+    height: 2.5rem;
+
+}
+
+h3 {
+    margin: 2em;
+    color: #86134D;
+    font-size: 1.5rem;
+
+}
+
+
+#address_form input {
+    border-color: #86134D;
+}
+
+.payment-methods {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.payment-methods-item {
+    display: flex;
+    width: 12em;
+    height: 12em;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+#payment-methods-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    width: 70%;
+
+}
+
+.payment-methods img {
+    width: 100%;
+
+    text-align: center;
+
+}
+
+footer {
+    text-align: center;
+    background-color: #F7EFE3;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+#footer-container {
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu_footer {
+    color: #86134D;
+    text-decoration: none;
+
+}
+
+#stores_footer {
+    width: 20rem;
+    height: 20rem;
+    border-color: #86134D;
+    border: 1rem;
+}
+
+.avatar_footer {
+    width: 3rem;
+}
+
+#arrepentimiento {
+    color: #DF80AD;
+}
+
+#arrepentimiento_form {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 10rem 10rem 10rem 2rem;
+    font-size: x-large;
+    padding: 3rem 5rem 1rem 1rem;
+
+}
+
+#arrepentimiento_form div:first-child {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+
+}
+
+#arrepentimiento_form div:nth-child(2) {
+    grid-area: 1 / 3 / 2 / 5;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    justify-self: right;
+
+}
+
+#arrepentimiento_form div:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    justify-self: center;
+}
+
+#arrepentimiento_form div:nth-child(4) {
+    grid-area: 2 / 3 / 3 / 5;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    justify-self: right;
+}
+
+#arrepentimiento_form div:nth-child(5) {
+    grid-area: 3 / 1 / 4 / 3;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    justify-self: center;
+}
+
+
+#arrepentimiento_form div:nth-child(6) {
+    grid-area: 3 / 3 / 4 / 5;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    border-color: #86134D;
+    justify-self: right;
+}
+
+
+#arrepentimiento_form div:nth-child(7) {
+    grid-area: 4 / 1 / 6 / 5;
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    justify-self: center;
+}
+
+#arrepentimiento_form div:nth-child(8) {
+    grid-area: 6 / 2 / 7 / 4;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+#legales-arrepentimiento {
+    margin: 0 3rem;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.form-button {
+    color: #F7EFE3;
+    background-color: #86134D;
+    border-color: #86134D;
+    border-radius: 0.5em;
+    width: auto;
+    height: 2.5rem;
+}
+
+.form-button:hover {
+
+    color: #F7EFE3;
+    background-color: #DF80AD;
+    border-color: #DF80AD;
+}
+
+#all-rights {
+    color: #DF80AD;
+}
+
+#arrepentimiento_form input {
+    border-color: #DF80AD
+}
+
+#arrepentimiento_form textarea {
+    border-color: #DF80AD
+}
+
+#arrepentimiento_form label {
+    color: #86134D
+}
+
+#mi-cuenta-list {
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+#mi-cuenta-list a {
+    text-decoration: none;
+    color: #86134D
+}
+
+.h1-sections {
+    color: #86134D;
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem
+}
